@@ -15,6 +15,7 @@
     "onCommand:extension.helloWorld"
   ],
   "main": "./dist/extension.js",
+  "license": "Apache-2.0",
   "contributes": {
     "commands": [
       {
