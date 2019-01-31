@@ -1,0 +1,40 @@
+{
+  "name": "markdown-spec-formatter",
+  "displayName": "Markdown spec formatter",
+  "version": "0.0.1",
+  "description": "A markdown formatter for Atom based on npm module: @quilicicf/markdown-formatter",
+  "publisher": "quilicicf",
+  "repository": "https://github.com/quilicicf/vscode-markdown-spec-formatter",
+  "engines": {
+    "vscode": "^1.25.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "activationEvents": [
+    "onCommand:extension.helloWorld"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "parcel build --target node --out-dir ./dist ./src/extension.js",
+    "watch": "parcel watch --target node --out-dir ./dist ./src/extension.js",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "dependencies": {
+    "@quilicicf/markdown-formatter": "1.0.0",
+    "lodash": "4.17.11"
+  },
+  "devDependencies": {
+    "parcel": "1.11.0",
+    "typescript": "3.2.4",
+    "vscode": "1.1.28"
+  }
+}
