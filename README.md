@@ -1,27 +1,20 @@
-# Hello World Sample
+# markdown-spec-formatter package
 
-This is a Hello World example that shows you how to use VS Code API.
+> A markdown formatter for [VSCode](https://code.visualstudio.com/) based on [@quilicicf/markdown-formatter](https://github.com/quilicicf/markdown-formatter)
 
-Guide for this sample: https://code.visualstudio.com/api/get-started/your-first-extension.
+<!-- TOC START min:2 max:4 -->
 
-## Demo
+* [Install](#install)
+* [More info](#more-info)
 
-![demo](demo.gif)
+<!-- TOC END -->
 
-## VS Code API
+## Install
 
-### `vscode` module
+Coming soon (when published).
 
-- [`commands.registerCommand`](https://code.visualstudio.com/api/references/vscode-api#commands.registerCommand)
-- [`window.showInformationMessage`](https://code.visualstudio.com/api/references/vscode-api#window.showInformationMessage)
+## More info
 
-### Contribution Points
+This package registers [@quilicicf/markdown-formatter](https://github.com/quilicicf/markdown-formatter) as a formatter for markdown in VSCode.
 
-- [`contributes.commands`](https://code.visualstudio.com/api/references/contribution-points#contributes.commands)
-
-## Running the Sample
-
-- Run `npm install` in terminal to install dependencies
-- Run the `Run Extension` target in the Debug View. This will:
-	- Start a task `npm: watch` to compile the code
-	- Run the extension in a new VS Code window
+For more information about the applied formatting, please refer to [markdown-formatter's doc](https://github.com/quilicicf/markdown-formatter).
