@@ -13,6 +13,8 @@
 
 Install this extension from the extension panel in VSCode.
 
+Or use the command palette (`ctrl+p`) and paste the command: `ext install quilicicf.markdown-spec-formatter`.
+
 ## More info
 
 This package registers [@quilicicf/markdown-formatter](https://github.com/quilicicf/markdown-formatter) as a formatter for markdown in VSCode.
