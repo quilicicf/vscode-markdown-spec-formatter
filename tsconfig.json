@@ -6,7 +6,6 @@
     "lib": [
       "es6"
     ],
-    "sourceMap": true,
     "rootDir": "."
   },
   "exclude": [

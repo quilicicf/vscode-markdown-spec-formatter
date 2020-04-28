@@ -67,4 +67,5 @@ typings/
 
 # App
 
-/out
+/dist
+/markdown-spec-formatter-*.vsix

@@ -11,7 +11,7 @@
 
 ## Install
 
-Coming soon (when published).
+Install this extension from the extension panel in VSCode.
 
 ## More info
 

@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import {formatFromString} from '@quilicicf/markdown-formatter';
 
-export function activate(context: vscode.ExtensionContext) {
+export function activate() {
     vscode.languages.registerDocumentFormattingEditProvider('markdown', {
         provideDocumentFormattingEdits(document: vscode.TextDocument): vscode.TextEdit[] {
             const fullText = document.getText();
