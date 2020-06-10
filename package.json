@@ -34,10 +34,13 @@
     "build": "webpack --mode production",
     "build-dev": "webpack --mode development",
     "watch": "webpack --mode development --watch",
-    "package": "npm run build && vsce package"
+    "package": "npm run build && vsce package",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "@quilicicf/markdown-formatter": "2.0.2"
+    "@quilicicf/markdown-formatter": "2.0.2",
+    "snyk": "^1.338.0"
   },
   "devDependencies": {
     "@types/node": "13.13.4",
@@ -47,5 +50,6 @@
     "vscode": "1.1.37",
     "webpack": "4.43.0",
     "webpack-cli": "3.3.11"
-  }
+  },
+  "snyk": true
 }
