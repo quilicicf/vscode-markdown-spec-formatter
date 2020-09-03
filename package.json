@@ -39,7 +39,7 @@
     "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "@quilicicf/markdown-formatter": "2.0.2",
+    "@quilicicf/markdown-formatter": "3.0.1",
     "snyk": "^1.338.0"
   },
   "devDependencies": {
