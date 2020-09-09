@@ -1,8 +1,12 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.14.1
+version: v1.19.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   SNYK-JS-LODASH-567746:
     - '@quilicicf/markdown-formatter > lodash':
         patched: '2020-06-10T09:24:15.250Z'
+    - '@quilicicf/markdown-formatter > snyk > snyk-cpp-plugin > @snyk/dep-graph > graphlib > lodash':
+        patched: '2020-09-09T09:59:50.533Z'
+    - '@quilicicf/markdown-formatter > snyk > snyk-docker-plugin > snyk-nodejs-lockfile-parser > graphlib > lodash':
+        patched: '2020-09-09T09:59:50.533Z'
