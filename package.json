@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@quilicicf/markdown-formatter": "3.0.2",
-    "snyk": "^1.437.4"
+    "snyk": "^1.438.0"
   },
   "devDependencies": {
     "@types/node": "14.14.22",
