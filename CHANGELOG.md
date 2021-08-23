@@ -1,3 +1,5 @@
+<!-- Formatted by https://github.com/quilicicf/markdown-formatter -->
+
 # Changelog
 
 * __1.1.0:__
