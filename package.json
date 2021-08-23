@@ -6,7 +6,7 @@
   "publisher": "quilicicf",
   "repository": "https://github.com/quilicicf/vscode-markdown-spec-formatter",
   "engines": {
-    "vscode": "^1.25.0"
+    "vscode": "^1.51.0"
   },
   "categories": [
     "Formatters"
@@ -14,7 +14,7 @@
   "activationEvents": [
     "onLanguage:markdown"
   ],
-  "main": "./dist/extension",
+  "main": "./dist/extension.js",
   "license": "Apache-2.0",
   "contributes": {
     "languages": [
@@ -27,28 +27,51 @@
           "md"
         ]
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Markdown-spec-formatter",
+      "properties": {
+        "markdown-spec-formatter.markdownFormatterOptions.watermark": {
+          "type": "string",
+          "default": "none",
+          "enum": [
+            "none",
+            "top",
+            "toc"
+          ],
+          "description": "Add a watermark with a link to this repository's home page. None => no watermark. Top => watermark at the top of the document. Toc => watermark in the closing comment of the table of contents."
+        },
+        "markdown-spec-formatter.stringifyOptions": {
+          "type": "object",
+          "default": {},
+          "description": "The options to use for stringification. Read @quilicicf/markdown-formatter's readme for details: https://github.com/quilicicf/markdown-formatter/#stringifyoptions"
+        }
+      }
+    }
   },
   "scripts": {
-    "test": "tsc --noEmit",
-    "build": "webpack --mode production",
-    "build-dev": "webpack --mode development",
-    "watch": "webpack --mode development --watch",
-    "package": "npm run build && vsce package",
+    "compile": "webpack --mode development",
+    "watch": "webpack --watch --mode development",
+    "package": "webpack --mode production --devtool hidden-source-map && vsce package",
+    "test-compile": "tsc -p ./",
+    "test-watch": "tsc -watch -p ./",
+    "pretest": "npm run test-compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "@quilicicf/markdown-formatter": "4.0.3",
-    "snyk": "^1.683.0"
+    "@quilicicf/markdown-formatter": "4.0.4",
+    "snyk": "^1.684.0"
   },
   "devDependencies": {
-    "@types/node": "16.6.1",
+    "@types/node": "16.7.1",
     "ts-loader": "9.2.5",
     "typescript": "4.3.5",
     "vsce": "1.96.1",
     "vscode": "1.1.37",
-    "webpack": "5.50.0",
+    "webpack": "5.51.1",
     "webpack-cli": "4.8.0"
   },
   "snyk": true

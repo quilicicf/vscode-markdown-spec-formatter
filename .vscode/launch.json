@@ -7,10 +7,14 @@
       "request": "launch",
       "runtimeExecutable": "${execPath}",
       "args": ["--extensionDevelopmentPath=${workspaceFolder}" ],
-      "stopOnEntry": false,
+      "stopOnEntry": true,
       "sourceMaps": true,
-      "outDir": "${workspaceFolder}/out/src",
-      "preLaunchTask": "npm"
+      "preLaunchTask": "npm",
+      "presentation": {
+        "hidden": false,
+        "group": "",
+        "order": 1
+      }
     }
   ]
 }
