@@ -1,7 +1,7 @@
 {
   "name": "markdown-spec-formatter",
   "displayName": "Markdown spec formatter",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A markdown formatter for VSCode based on npm module: @quilicicf/markdown-formatter",
   "publisher": "quilicicf",
   "repository": "https://github.com/quilicicf/vscode-markdown-spec-formatter",
