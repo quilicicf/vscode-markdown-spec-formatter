@@ -1,0 +1,10 @@
+extends:
+  - '@talend/eslint-config/api-packaging.yaml'
+  - 'plugin:@typescript-eslint/recommended'
+root: true
+parser: '@typescript-eslint/parser'
+plugins:
+  - '@typescript-eslint'
+rules:
+  import/extensions:
+    - off

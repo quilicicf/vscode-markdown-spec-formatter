@@ -58,21 +58,31 @@
     "pretest": "npm run test-compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "snyk-protect"
   },
   "dependencies": {
     "@quilicicf/markdown-formatter": "4.0.5",
-    "snyk": "^1.996.0"
+    "@types/vscode": "1.72.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.10",
+    "vfile": "5.3.5"
   },
   "devDependencies": {
-    "@types/node": "17.0.12",
-    "ts-loader": "9.2.6",
-    "typescript": "4.5.5",
-    "vsce": "2.6.4",
-    "vscode": "1.1.37",
-    "webpack": "5.67.0",
-    "webpack-cli": "4.9.2"
+    "@snyk/protect": "^1.1048.0",
+    "@talend/eslint-config": "4.0.2",
+    "@types/node": "18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "eslint": "8.26.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-import-resolver-node": "0.3.6",
+    "eslint-plugin-import": "2.26.0",
+    "ts-loader": "9.4.1",
+    "typescript": "4.8.4",
+    "vsce": "2.13.0",
+    "vscode-test": "1.6.1",
+    "webpack": "5.74.0",
+    "webpack-cli": "4.10.0"
   },
   "snyk": true
 }
