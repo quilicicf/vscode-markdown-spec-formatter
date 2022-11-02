@@ -2,44 +2,44 @@
 
 set -e
 
-# Release the package. Make sure the package.json's version and the CHANGELOG are up-to-date before running.
-main() {
-  local newVersion="${1?Missing new version}"
+# Release the package. Make sure the CHANGELOG is up-to-date before running.
+main() (
+  newVersion="${1?Missing new version parameter}"
+  newTag="v${newVersion}"
+
   [[ "${newVersion}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || {
     printf 'The version must comply with semver\n'
-    return 1
-  }
-
-  local versionInPackage
-  versionInPackage="$(jq '.version' --raw-output package.json)"
-  [[ "${newVersion}" == "${versionInPackage}" ]] || {
-    printf 'The version in package.json is not up-to-date\n'
     return 1
   }
 
   cd "$(git rev-parse --show-toplevel)"
   rm -rf ./dist || true
 
+  npm version "${newVersion}"
   npm run package
-  local vsixFile="markdown-spec-formatter-${newVersion}.vsix"
+  vsixFile="markdown-spec-formatter-${newVersion}.vsix"
   code --install-extension "${vsixFile}"
 
-  printf 'Try the extension (temporarily installed in VSCode) then type ENTER\n'
-  read -r
+  printf 'Try the extension (temporarily installed in VSCode) then type Y if it works or N to abort\n'
+  read -r answer
 
-  code --uninstall-extension "${vsixFile}"
+  if [[ "${answer^^}" == 'Y' ]]; then
+    code --uninstall-extension "${vsixFile}"
 
-  local uploadLocation='https://marketplace.visualstudio.com/manage/publishers/quilicicf'
-  printf 'You are ready to go, now upload %s here: %s\n' "${vsixFile}" "${uploadLocation}"
-  printf 'When you are done, type ENTER\n'
+    uploadLocation='https://marketplace.visualstudio.com/manage/publishers/quilicicf'
+    printf 'You are ready to go, now upload %s here: %s\n' "${vsixFile}" "${uploadLocation}"
+    printf 'When you are done, type ENTER\n'
 
-  read -r
+    read -r
 
-  git tag "v${newVersion}"
-  git push --tags
+    git push --tags
 
-  rm "${vsixFile}"
-  printf 'You are all good!\n'
-}
+    rm "${vsixFile}"
+    printf 'You are all good!\n'
+  else
+    git tag --delete "${newTag}"
+    git reset HEAD~1 --hard
+  fi
+)
 
-(main "$@")
+main "$@"

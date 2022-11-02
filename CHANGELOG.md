@@ -2,6 +2,8 @@
 
 # Changelog
 
+* __1.1.1:__
+  * :lock: Upgrade libs
 * __1.1.0:__
   * :new: Add settings to configure the formatter
   * :lock: Upgrade libs
