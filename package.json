@@ -64,7 +64,7 @@
     "@quilicicf/markdown-formatter": "4.0.5",
     "@types/vscode": "1.72.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react": "^7.31.11",
     "vfile": "5.3.5"
   },
   "devDependencies": {
