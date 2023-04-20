@@ -15,8 +15,8 @@ main() (
   cd "$(git rev-parse --show-toplevel)"
   rm -rf ./dist || true
 
-  npm version "${newVersion}"
-  npm run package
+  yarn version "${newVersion}"
+  yarn run package
   vsixFile="markdown-spec-formatter-${newVersion}.vsix"
   code --install-extension "${vsixFile}"
 
@@ -32,6 +32,7 @@ main() (
 
     read -r
 
+    git push origin 'master'
     git push --tags
 
     rm "${vsixFile}"
