@@ -61,8 +61,6 @@ typings/
 .next
 
 # IntelliJ
-
-/.idea
 *.iml
 
 # App
