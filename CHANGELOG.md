@@ -2,6 +2,8 @@
 
 # Changelog
 
+* __1.1.2:__
+  * :lock: Upgrade libs
 * __1.1.1:__
   * :lock: Upgrade libs
 * __1.1.0:__
