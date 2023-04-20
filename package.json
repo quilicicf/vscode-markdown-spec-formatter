@@ -57,7 +57,6 @@
     "test-watch": "tsc -watch -p ./",
     "pretest": "npm run test-compile && npm run lint",
     "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js",
     "prepare": "snyk-protect"
   },
   "dependencies": {
