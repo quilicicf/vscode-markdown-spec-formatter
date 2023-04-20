@@ -2,12 +2,13 @@
 
 # markdown-spec-formatter package
 
-> A markdown formatter for [VSCode](https://code.visualstudio.com/) based on [@quilicicf/markdown-formatter](https://github.com/quilicicf/markdown-formatter)
+> A markdown formatter for [VSCode](https://code.visualstudio.com/) based on [@quilicicf/markdown-formatter](https://github.com/quilicicf/markdown-formatter) ❤️✨🦄
 
 <!-- TOC START min:2 max:4 -->
 
 * [Install](#install)
 * [Test during development](#test-during-development)
+* [Release](#release)
 * [More info](#more-info)
 
 <!-- TOC END -->
