@@ -15,7 +15,7 @@ main() (
   cd "$(git rev-parse --show-toplevel)"
   rm -rf ./dist || true
 
-  yarn version "${newVersion}"
+  yarn version "--new-version=${newVersion}"
   yarn run package
   vsixFile="markdown-spec-formatter-${newVersion}.vsix"
   code --install-extension "${vsixFile}"

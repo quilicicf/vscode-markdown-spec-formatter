@@ -1,12 +1,12 @@
 {
   "name": "markdown-spec-formatter",
   "displayName": "Markdown spec formatter",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "A markdown formatter for VSCode based on npm module: @quilicicf/markdown-formatter",
   "publisher": "quilicicf",
   "repository": "https://github.com/quilicicf/vscode-markdown-spec-formatter",
   "engines": {
-    "vscode": "^1.51.0"
+    "vscode": "^1.84.2"
   },
   "categories": [
     "Formatters"
@@ -60,28 +60,28 @@
     "prepare": "snyk-protect"
   },
   "dependencies": {
-    "@quilicicf/markdown-formatter": "4.0.7",
-    "@types/vscode": "1.82.0",
-    "eslint-plugin-jsx-a11y": "6.7.1",
+    "@quilicicf/markdown-formatter": "5.0.0",
+    "@types/vscode": "1.84.2",
+    "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-react": "7.33.2",
-    "vfile": "5.3.7"
+    "vfile": "6.0.1"
   },
   "devDependencies": {
-    "@snyk/protect": "^1.1225.0",
-    "@talend/eslint-config": "4.0.2",
-    "@types/node": "18.17.18",
-    "@typescript-eslint/eslint-plugin": "5.62.0",
-    "@typescript-eslint/parser": "5.62.0",
-    "eslint": "8.49.0",
+    "@snyk/protect": "^1.1252.0",
+    "@talend/eslint-config": "13.0.0",
+    "@types/node": "20.9.4",
+    "@typescript-eslint/eslint-plugin": "6.12.0",
+    "@typescript-eslint/parser": "6.12.0",
+    "eslint": "8.54.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-import-resolver-node": "0.3.9",
-    "eslint-plugin-import": "2.28.1",
-    "ts-loader": "9.4.4",
-    "typescript": "5.2.2",
+    "eslint-plugin-import": "2.29.0",
+    "ts-loader": "9.5.1",
+    "typescript": "5.3.2",
     "vsce": "2.13.0",
     "vscode-test": "1.6.1",
-    "webpack": "5.88.2",
-    "webpack-cli": "4.10.0"
+    "webpack": "5.89.0",
+    "webpack-cli": "5.1.4"
   },
   "snyk": true
 }
