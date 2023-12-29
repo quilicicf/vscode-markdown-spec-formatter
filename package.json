@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@quilicicf/markdown-formatter": "5.0.0",
-    "@types/vscode": "1.84.2",
+    "@types/vscode": "1.85.0",
     "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-react": "7.33.2",
     "vfile": "6.0.1"
