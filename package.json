@@ -64,7 +64,7 @@
     "@types/vscode": "1.84.2",
     "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-react": "7.33.2",
-    "vfile": "6.0.1"
+    "vfile": "6.0.2"
   },
   "devDependencies": {
     "@snyk/protect": "^1.1252.0",
