@@ -4,14 +4,9 @@
 
 > A markdown formatter for [VSCode](https://code.visualstudio.com/) based on [@quilicicf/markdown-formatter](https://github.com/quilicicf/markdown-formatter) ❤️✨🦄
 
-<!-- TOC START min:2 max:4 -->
+## 🚨 Migrated to codeberg
 
-* [Install](#install)
-* [Test during development](#test-during-development)
-* [Release](#release)
-* [More info](#more-info)
-
-<!-- TOC END -->
+De-GAFAMization in process, [new repository available here](https://codeberg.org/quilicicf/vscode-markdown-spec-formatter).
 
 ## Install
 
